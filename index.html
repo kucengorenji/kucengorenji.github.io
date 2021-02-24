@@ -1,109 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-
-    <title>survey form</title>
-    <link
-      rel="stylesheet"
-      href="https://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="title">
-        <h1 id="title">input data</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Mikael Risyad</title>
+</head>
+<body>
+  <header>
+    <!-- header navigation -->
+    <nav>
+      <div class="nav-list"><a href="#">HOME</a></div>
+      <div class="nav-list"><a href="#">HOME</a></div>
+      <div class="nav-list"><a href="#">HOME</a></div>
+      <div class="nav-list"><a href="#">HOME</a></div>
+    </nav>
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <h1>Mikael Risyad</h1>
+      <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+    </div>
+    <!-- social media icon -->
+    <div class="social">
+      <div class="social-list"><a href="#"><img src="assets/icon/1532515-social-media/svg/026-dribble.svg" alt=""></a></div>
+      <div class="social-list"><a href="#"><img src="assets/icon/1532515-social-media/svg/011-twitter.svg" alt=""></a></div>
+      <div class="social-list"><a href="#"><img src="assets/icon/1532515-social-media/svg/024-whatsapp.svg" alt=""></a></div>
+    </div>
+  </header>
+  <main>
+    <!-- Profile -->
+    <div class="profile">
+      <div class="main-photo">
+        <img src="assets/wisata kuburan.jpg" alt="mikael risyad">
       </div>
-      <div class="description">
-        <p id="description">fill your data here</p>
+      <div class="about">
+        <h2>About me</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#">Read more</a>
       </div>
-    </header>
-    <main>
-      <div class="infographic">
-        <img
-          src="assets/photo_2019-07-24_14-52-04.jpg"
-          width="600px"
-          alt="photo"
-        />
+    </div>
+    <!-- Blog -->
+    <div class="blog">
+      <div class="card-blog">
+        <h2>Wittgenstein Tought</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#">Read more</a>
+        <img class="blog-image" src="assets/book.jpeg" alt="">
       </div>
-      <form action="" id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name"
-            >name :
-            <input
-              id="name"
-              type="text"
-              placeholder="insert your name"
-              required
-            />
-          </label>
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email"
-            >email :
-            <input
-              id="email"
-              type="email"
-              placeholder="insert your email"
-              required
-            />
-          </label>
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >number :
-            <input
-              id="number"
-              type="number"
-              placeholder="Qty"
-              min="1"
-              max="10"
-            />
-          </label>
-        </div>
-        <div class="form-group">
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label><br />
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label><br />
-          <input type="radio" id="other" name="gender" value="other" />
-          <label for="other">Other</label>
-        </div>
-        <div class="form-group">
-          <select name="dropdown" id="dropdown">
-            <option value="option-1">option 1</option>
-            <option value="option-2">option 2</option>
-            <option value="option-3">option 3</option>
-            <option value="option-4">option 4</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-          <label for="vehicle1"> I have a bike</label><br />
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-          <label for="vehicle2"> I have a car</label><br />
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3"> I have a boat</label><br />
-        </div>
-        <div class="form-group">
-          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-        </div>
-        <div class="form-group">
-          <input id="submit" type="submit" />
-        </div>
-      </form>
-    </main>
-    <footer>
-      <iframe
-        src="https://uploads.knightlab.com/storymapjs/da593f25cbfe54bc06dbe4222747d74a/wisata-ngerangan/index.html"
-        frameborder="0"
-        width="100%"
-        height="800"
-      ></iframe>
-    </footer>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+      
+    </div>
+  </main>
+</body>
 </html>
