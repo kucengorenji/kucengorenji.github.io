@@ -61,7 +61,7 @@ main {
 /* profile */
 .profile {
     height: 100vh;
-    width: 50%;
+    width: 100%;
 }
 
 .main-photo{
@@ -127,7 +127,6 @@ main {
         height: 100%;
     }
     .main-photo {
-        height:
     }
 }
 

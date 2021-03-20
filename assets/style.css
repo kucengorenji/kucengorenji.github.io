@@ -34,7 +34,10 @@ nav .nav-list {
 nav .nav-list a{
     color: black;
 }
-
+.nav-list:hover {
+    background-color: white;
+    border-radius: 15px;
+}
 
 .jumbotron {
     color: black;
@@ -78,6 +81,8 @@ main {
     padding: 30px;
     text-align: justify;
     background-color: #1a5f3b;
+    /* another optinon */
+    /* background-color: #1b4131; */
     height: 50%;
     color: white;
 }
@@ -85,19 +90,29 @@ main {
 /* blog */
 .blog {
     width: 50%;
-    padding: 30px;
-    
+    padding: 10px;
+    overflow-y:auto;
     text-align: justify;    
     color: white;
     background-color: #1b4131;
 }
+
 .blog-header {
     text-align: center;
     font-style: italic;
+    /* position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1b4131;
+    margin-top: 0; */
 }
 .card-blog {
-    padding: 30px;    
-    height: 100%;   
+    margin: 30px;
+    margin-bottom: 4rem;
+    padding: 20px;
+    /* delete to remove card bg, still looks good w/ the bg */
+    background-color: #1a5f3b;
+    border-radius: 5px;
 }
 .blog a {
     display: block;
@@ -105,6 +120,7 @@ main {
 .blog-image {
     display: block;
     margin: auto;
+    position: relative;
 }
 
  .about a,.blog a {
@@ -114,6 +130,7 @@ main {
 @media (max-width: 1000px) {
     body {
         display: inline;
+        
     }
     main {
         display: inline;
@@ -131,7 +148,10 @@ main {
 }
 
 @media (min-width: 1920px) {
-    .blog, .about {
+    .about {
         font-size: 1.5rem;
     }
+    .blog {
+        font-size: 1.3rem;
+    }   
 }
